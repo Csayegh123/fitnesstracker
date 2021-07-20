@@ -12,12 +12,12 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker",
+  process.env.MONGODB_URI || 'mongodb://localhost/fitnesstracker',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
-    useFindAndModify: false,
+    useFindAndModify: false
   }
 );
 mongoose.connection.on("connected", () => {

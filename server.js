@@ -26,9 +26,6 @@ mongoose.connect(
   }
 );
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populate", {
-//   useNewUrlParser: true,
-// });
 
 //render html routes
 app.get("/exercise", function (req, res) {
